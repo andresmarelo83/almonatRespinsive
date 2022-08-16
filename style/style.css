@@ -1,0 +1,231 @@
+/* MEDIDAS MEDIA QUIERIES 
+Medidas aprox de media queries
+
+320px — 480px: Mobile
+
+481px — 768px: Tablets / Ipdas
+
+769px — 1024px: Laptops pantalla pequeñas.
+
+1025px — 1200px: Escritorio, pantallas grandes.
+
+1201px and more — Super pantallas, tv*/
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Fontdiner+Swanky&family=Galindo&family=Ribeye+Marrow&family=Seymour+One&family=Swanky+and+Moo+Moo&display=swap');
+/* font-family: 'Bungee Outline', cursive;
+font-family: 'Fontdiner Swanky', cursive;
+font-family: 'Galindo', cursive;
+font-family: 'Ribeye Marrow', cursive;
+font-family: 'Seymour One', sans-serif;
+font-family: 'Swanky and Moo Moo', cursive; */
+/* RESET */
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+/* HEADER */
+a{text-decoration: none;color: aliceblue;}
+
+/* HOME-HERO */
+
+
+
+
+
+/* HEADER */
+/* [menu navegacion] */
+.hero{
+    position: relative;
+    background-color: darkorange;
+   
+}
+.hero .hero__nav{
+    background-color:black;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    list-style: none;
+    
+
+}
+.menu__item{
+    font-size: 100%;
+    font-family: 'Seymour One', sans-serif;
+
+    
+}
+.menu__item.active a, .menu__item a:hover{
+    color: darkorange;
+    
+}
+/* [imagen de inicio] */
+.hero__portada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.hero__portada .logoAlmonat{
+    width: 300px;
+    padding: 0;
+    position: center;
+}
+.hero__portada .nuts{
+    width: 70%;
+    
+   
+}
+
+/* FOOTER */
+.pie{
+    border: 20px solid black;
+  
+    
+}
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social img{
+    width: 40px;
+    margin: 10px;
+    
+    
+}
+
+/* NOSOTROS */
+
+
+
+.nosotros__nav{
+    
+    background-color:black;
+    position: fixed;
+    width: 100%;
+    padding: 2%;
+    
+}
+
+
+.info__nosotros{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: darkorange;
+}
+.info__nosotros h2{
+font-family: 'Fontdiner Swanky', cursive;
+}
+.info__nosotros p{
+    
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    
+    
+    
+
+}
+.quienes__somos{
+    display: flex;
+
+}
+.quienes__somos img{
+    width: 50%;
+    padding: 2rem;
+    border-radius: 100px;
+    margin:8% ;
+
+}
+.info__quienes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 50%;
+    gap: 30px;
+}
+
+.mision{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.mision img{
+    width: 50%;
+    padding: 2rem;
+    border-radius: 100px;
+
+}
+.info__mision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 50%;
+}
+.vision{
+    display: flex;
+
+}
+.vision img{
+    width: 50%;
+    padding: 2rem;
+    border-radius: 100px;
+
+}
+.info__vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 50%;
+}
+
+
+/* PRODUCTOS */
+
+.productos__nav{
+    background-color:black;
+    position: fixed;
+    width: 100%;
+    padding: 2%;
+    
+}
+.productos{
+    background-color: darkorange;
+
+
+}
+
+
+
+
+/* RECETAS */
+
+.recetas__nav{
+    background-color:black;
+    position: fixed;
+    width: 100%;
+    padding: 2%;
+    
+}
+/* CONTACTO */
+
+.productos__nav{
+    background-color:black;
+    position: fixed;
+    width: 100%;
+    padding: 2%;
+    
+}
