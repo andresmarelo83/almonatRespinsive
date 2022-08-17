@@ -21,211 +21,244 @@ font-family: 'Seymour One', sans-serif;
 font-family: 'Swanky and Moo Moo', cursive; */
 /* RESET */
 *{margin: 0;padding: 0;box-sizing: border-box;}
+a{text-decoration: none; color: aliceblue;}
 
-/* HEADER */
-a{text-decoration: none;color: aliceblue;}
-
-/* HOME-HERO */
-
-
-
-
-
-/* HEADER */
-/* [menu navegacion] */
-.hero{
-    position: relative;
-    background-color: darkorange;
-   
-}
-.hero .hero__nav{
-    background-color:black;
-    position:absolute;
-    bottom: 0;
+.containerHero{
     width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "logo   logo   logo"
+    "banner banner banner"
+    "header header header"
+    "footer footer footer";
 }
-.menu{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-    list-style: none;
-    
-
-}
-.menu__item{
-    font-size: 100%;
-    font-family: 'Seymour One', sans-serif;
-
-    
-}
-.menu__item.active a, .menu__item a:hover{
-    color: darkorange;
-    
-}
-/* [imagen de inicio] */
-.hero__portada{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 2rem;
-}
-.hero__portada .logoAlmonat{
-    width: 300px;
-    padding: 0;
-    position: center;
-}
-.hero__portada .nuts{
-    width: 70%;
-    
-   
-}
-
-/* FOOTER */
-.pie{
-    border: 20px solid black;
-  
-    
-}
-.social{
+.containerHero>div{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
 }
-.social img{
-    width: 40px;
-    margin: 10px;
-    
-    
-}
-
-/* NOSOTROS */
-
-
-
-.nosotros__nav{
-    
-    background-color:black;
-    position: fixed;
-    width: 100%;
-    padding: 2%;
+.logo{
+    background-color: #ff8c00;
+    grid-area: logo;
     
 }
-
-
-.info__nosotros{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: darkorange;
-}
-.info__nosotros h2{
-font-family: 'Fontdiner Swanky', cursive;
-}
-.info__nosotros p{
-    
-    font-family: 'Swanky and Moo Moo', cursive;
-    font-size: large;
-    font-weight: 500;
-    letter-spacing: 2px;
-
-    
-    
-    
-
-}
-.quienes__somos{
-    display: flex;
-
-}
-.quienes__somos img{
+.logo img{
     width: 50%;
-    padding: 2rem;
-    border-radius: 100px;
-    margin:8% ;
+}
+.banner{
+    background-color: #ff8c00;
+    grid-area: banner;
+}
+.banner img{
+    width: 100%;
+    bottom: 0;
+}
+.header{
+    background-color: rgb(0, 0, 0);
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu__item.active a, .menu__item a:hover{color: darkorange;}
+.footer{
+    background-color: rgb(255, 255, 255);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    border: 15px solid black;
+}
+.footer .logo{
+    width: 3rem;
+    background-color: aliceblue;
+}
+/* NOSOTROS */
+.containerNosotros{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 2fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "quienesSomos quienesSomos quienesSomos"
+    "mision       mision       mision"
+    "vision       vision       vision"
+    "header       header       header"
+    "footer       footer       footer";
+}
 
+.quienesSomos{
+    grid-area:quienesSomos ;
+    background-color: #ff8c00;
+    display: flex;    
 }
 .info__quienes{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+}
+.img__quienesSomos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img__quienesSomos img{
     width: 50%;
-    gap: 30px;
+    
+    
 }
 
+
+   
 .mision{
+    grid-area:mision ;
     display: flex;
     flex-direction: row-reverse;
-
-}
-.mision img{
-    width: 50%;
-    padding: 2rem;
-    border-radius: 100px;
-
+    background-color: #ff8c00;
+   
+   
 }
 .info__mision{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+}
+.img__mision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img__mision img{
     width: 50%;
 }
 .vision{
+    grid-area:vision;
     display: flex;
-
+    background-color: #ff8c00;
+    
 }
-.vision img{
-    width: 50%;
-    padding: 2rem;
-    border-radius: 100px;
 
-}
 .info__vision{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    width: 50%;
 }
-
+.img__vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img__vision img{
+    width: 50%;
+    
+}
+.vision{
+    grid-area:vision ;
+    display: flex;
+}
+   
+.header{
+    grid-area:header ;
+}
+.footer{
+    grid-area: footer;
+}
 
 /* PRODUCTOS */
 
-.productos__nav{
-    background-color:black;
-    position: fixed;
+.contenedorProductos{
     width: 100%;
-    padding: 2%;
-    
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+    grid-template-areas: 
+    "descripcion bannerProducto bannerProducto"
+    "descripcion bannerProducto bannerProducto"
+    "productos   productos      productos"
+    "header      header         header"
+    "footer      footer         footer";
+}
+
+.bannerProducto{
+    grid-area:bannerProducto ;
+    background-color: #ff8c00;
+
+}
+.descripcion{
+    grid-area:descripcion ;
+    background-color: #ff8c00;
 }
 .productos{
-    background-color: darkorange;
+    grid-area:productos ;
+    
+    background-color: #ff8c00;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 2fr);
 
-
-}
-
-
-
-
-/* RECETAS */
-
-.recetas__nav{
-    background-color:black;
-    position: fixed;
-    width: 100%;
-    padding: 2%;
     
 }
-/* CONTACTO */
+.header{
+    grid-area: header;
+}
+.footer{
+    grid-area: footer;
+}
 
-.productos__nav{
-    background-color:black;
-    position: fixed;
+.bannerProducto img{
     width: 100%;
-    padding: 2%;
+    height: 400px;
+    transform: rotate(-180deg);
+
+}
+.cards{
+    width: 300px;
+    background-color: rgb(121, 197, 197);
+    padding: 10px;
+    margin: 50px;
+    border-radius: 10px;
+    display: inline-block;
+
+}
+.imagenCards{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.cards h3{
+    font-size: 40px;
+    text-align: center;
+    font-family: fantasy;
+}
+.cards p{
+    font-size: 20px;
+    font-family:;
+    margin-bottom: 10px;
+}
+.cards button{ 
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
     
+
 }
