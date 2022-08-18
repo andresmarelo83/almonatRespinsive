@@ -22,27 +22,27 @@ font-family: 'Swanky and Moo Moo', cursive; */
 /* RESET */
 *{margin: 0;padding: 0;box-sizing: border-box;}
 a{text-decoration: none; color: aliceblue;}
-
+body{
+    background-color: #ff8c00;
+}
 .containerHero{
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "logo   logo   logo"
     "banner banner banner"
     "header header header"
     "footer footer footer";
 }
-.containerHero>div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .logo{
     background-color: #ff8c00;
     grid-area: logo;
+    display: flex;
+    justify-content: center;
     
 }
 .logo img{
@@ -51,129 +51,143 @@ a{text-decoration: none; color: aliceblue;}
 .banner{
     background-color: #ff8c00;
     grid-area: banner;
+    display: flex;
+    justify-content: center;
 }
 .banner img{
-    width: 100%;
-    bottom: 0;
+    width: 90%
 }
 .header{
     background-color: rgb(0, 0, 0);
     grid-area: header;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
+    width: auto;
+    height: auto;
+    
 }
 .menu{
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    font-size: x-large;
+    font-family: 'Fontdiner Swanky', cursive;
 }
-.menu__item.active a, .menu__item a:hover{color: darkorange;}
+.menu__item.active a, .menu__item a:hover{
+    color: darkorange;
+}
 .footer{
+    width: 100%;
+    height: 50px;
     background-color: rgb(255, 255, 255);
     grid-area: footer;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 1rem 0;
-    border: 15px solid black;
+    padding: 2rem 0;
+    border: 1rem solid black;
 }
 .footer .logo{
     width: 3rem;
     background-color: aliceblue;
 }
+
+
 /* NOSOTROS */
 .containerNosotros{
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "quienesSomos quienesSomos quienesSomos"
-    "mision       mision       mision"
-    "vision       vision       vision"
+    "quienesSomos quienesSomos imgQ"
+    "imgM      mision       mision"
+    "vision       vision       imgV"
     "header       header       header"
     "footer       footer       footer";
 }
 
 .quienesSomos{
-    grid-area:quienesSomos ;
+    grid-area:quienesSomos;
     background-color: #ff8c00;
-    display: flex;    
-}
-.info__quienes{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    text-align: justify;
+    padding: 3rem;
 }
-.img__quienesSomos{
+
+.imgQ{
+    grid-area: imgQ;
+    background-color: #ff8c00;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.img__quienesSomos img{
-    width: 50%;
+.imgQ img{
+    width: 100%;
+    border-radius: 50px;
+    padding: 1rem;
     
     
 }
 
-
+.imgM{
+    grid-area: imgM;
+    background-color: #ff8c00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.imgM img{
+    width: 100%;
+    border-radius: 50px;
+    padding: 1rem;
+}
    
 .mision{
-    grid-area:mision ;
-    display: flex;
-    flex-direction: row-reverse;
+    grid-area:mision;
     background-color: #ff8c00;
-   
-   
-}
-.info__mision{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.img__mision{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img__mision img{
-    width: 50%;
-}
-.vision{
-    grid-area:vision;
-    display: flex;
-    background-color: #ff8c00;
-    
+    gap: 2rem;
+    text-align: justify;
+    padding: 3rem;
 }
 
-.info__vision{
+.vision{
+    grid-area: vision;
+    background-color: #ff8c00;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    text-align: justify;
+    padding: 3rem;
 }
-.img__vision{
+.imgV{
+    grid-area: imgV;
+    background-color: #ff8c00;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.img__vision img{
-    width: 50%;
-    
+
+.imgV img{
+    width: 100%;
+    border-radius: 50px;
+    padding: 1rem;    
 }
-.vision{
-    grid-area:vision ;
-    display: flex;
-}
-   
+
 .header{
     grid-area:header ;
 }
@@ -181,41 +195,60 @@ a{text-decoration: none; color: aliceblue;}
     grid-area: footer;
 }
 
+
+
+
 /* PRODUCTOS */
 
 .contenedorProductos{
     width: 100%;
     height: 100vh;
+    background-color: #ff8c00;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 3fr 3fr 3fr 1fr 1fr;
     grid-template-areas: 
-    "descripcion bannerProducto bannerProducto"
-    "descripcion bannerProducto bannerProducto"
-    "productos   productos      productos"
+    "vitaminas   granos descripcion"
+    "frutosSecos frutas descripcion"
+    "verduras  salsas      descripcion"
     "header      header         header"
     "footer      footer         footer";
 }
 
-.bannerProducto{
-    grid-area:bannerProducto ;
-    background-color: #ff8c00;
-
-}
 .descripcion{
     grid-area:descripcion ;
-    background-color: #ff8c00;
-}
-.productos{
-    grid-area:productos ;
-    
-    background-color: #ff8c00;
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: repeat(2, 2fr);
+    background-image: url(../imagenes/imagenes/hand-meray.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: aliceblue;
 
-    
 }
+.vitaminas{
+    grid-area:vitaminas;    
+    background-image: url(../imagenes/imagenes/vitaminas.jpg);    
+}
+.granos{
+    grid-area:granos;    
+    background-image: url(../imagenes/imagenes/granos.jpg);
+}
+.frutosSecos{
+    grid-area:frutosSecos;    
+    background-image: url(../imagenes/imagenes/frutossecos.jpg);
+}
+.frutas{
+    grid-area:frutas;
+    background-image: url(../imagenes/imagenes/frutas.jpg);  
+}
+.verduras{
+    grid-area:verduras;
+    background-image: url(../imagenes/imagenes/verduras.jpg);
+}
+.salsas{
+    grid-area:salsas;
+    background-image: url(../imagenes/imagenes/salsas.jpg);
+}
+
 .header{
     grid-area: header;
 }
@@ -223,42 +256,238 @@ a{text-decoration: none; color: aliceblue;}
     grid-area: footer;
 }
 
-.bannerProducto img{
-    width: 100%;
-    height: 400px;
-    transform: rotate(-180deg);
-
-}
 .cards{
-    width: 300px;
-    background-color: rgb(121, 197, 197);
-    padding: 10px;
-    margin: 50px;
-    border-radius: 10px;
-    display: inline-block;
+   display: flex;
+   justify-content:center;
+   align-items: center;   
+   margin: 1rem;
+   border-radius: 10px;
+   background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.descripcion{
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   margin: 1rem;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 0, 0.507);
+}
 
-}
-.imagenCards{
-    width: 100%;
-    margin-bottom: 20px;
-}
-.cards h3{
-    font-size: 40px;
+.contenedorProductos h2,h3{
+    font-size: xx-large;
     text-align: center;
-    font-family: fantasy;
-}
-.cards p{
-    font-size: 20px;
-    font-family:;
-    margin-bottom: 10px;
-}
-.cards button{ 
-    background-color: black;
-    color: aliceblue;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 20px;
-    margin-bottom: 10px;
+    font-weight: 1000;
+    color: #070707;
+    font-family: 'Ribeye Marrow', cursive;
     
 
+
+    
 }
+.contenedorProductos p{
+    font-size: large;
+    color: black;
+    font-family: 'Swanky and Moo Moo', cursive;
+    margin-bottom: 10px;
+}
+
+
+/* RECETAS */
+.contenedorRecetas{
+    width: 100%;
+    height: 100vh;
+    background-color: #ff8c00;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr) ;
+    grid-template-rows: 3fr 3fr 3fr 3fr 1fr 1fr;
+    grid-template-areas: 
+    "descripcion zumos  ensaladas"
+    "descripcion zumos ensaladas"
+    "canal sopas desayunos"
+    "canal sopas desayunos"
+    "header      header         header"
+    "footer      footer         footer";
+}
+
+.recetas{
+    background-image: url(../imagenes/imagenes/granola.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zumos{
+    grid-area:zumos;    
+    background-image: url(../imagenes/imagenes/batidoEspinaca.jpg);    
+}
+.ensaladas{
+    grid-area:ensaladas;    
+    background-image: url(../imagenes/imagenes/frutasycereal.jpg);
+}
+.sopas{
+    grid-area:sopas;    
+    background-image: url(../imagenes/imagenes/cremadezanahoria.jpg);
+}
+.desayunos{
+    grid-area:desayunos;
+    background-image: url(../imagenes/imagenes/champiñonRelleno.jpg);  
+}
+.canal{
+    grid-area:canal;
+}
+
+
+.header{
+    grid-area: header;
+}
+.footer{
+    grid-area: footer;
+}
+
+
+/* CONTACTO */
+.contenedorContacto{
+    width: 100%;
+    height: 100vh;
+    background-color: #ff8c00;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    grid-template-areas: 
+    "logoContacto logoContacto logoContacto"
+    "formulario    formulario  formulario"
+    "header      header         header"
+    "footer      footer         footer";
+
+    
+}
+.logoContacto{
+    grid-area: logoContacto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoContacto img{
+    width: 200px;
+}
+.formulario{
+    
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: space-around;  
+    background-color: #ff8c00;     
+    margin: 20px 200px;
+    padding: 3rem 0;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 70%;
+    padding: 2rem;
+    background-color: rgb(55, 129, 129);
+    border-radius: 50px;  
+    
+}
+.botonFormulario{
+    width: 5rem;
+    margin-inline: auto;
+    
+}
+
+
+
+
+
+
+
+/* MEDIAQUIERIES */
+/* ______________ */
+
+/* HEADER Y FOOTER */
+/* 481px — 768px: Tablets / Ipdas */
+@media screen and (max-width: 768px) {
+    
+    
+    .menu{         
+        flex-direction: column;
+        align-items:center;
+        font-size:x-large;
+    }
+}
+
+/* 320px — 480px: Mobile */
+@media screen and (max-width: 480px) {
+    
+    
+    .menu{         
+        flex-direction: column;
+        align-items:center;
+        font-size: medium;
+    }  
+    .footer .logo{
+       width: 2.5rem;
+    }
+}
+/* NOSOTROS */
+/* 481px — 768px: Tablets / Ipdas */
+@media screen and (max-width: 768px) {
+    .containerNosotros{
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "quienesSomos quienesSomos imgQ"
+        "imgM         imgM         mision"        
+        "vision       vision       imgV"
+        "header       header       header"
+        "footer       footer       footer";
+    }
+    
+}
+
+/* 320px — 480px: Mobile */
+@media screen and (max-width: 480px) {
+    .containerNosotros{
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    "quienesSomos "
+    "imgQ "
+    "mision"
+    "imgM"               
+    "vision"
+    "imgV"
+    "header" 
+    "footer"     
+    }
+    
+}
+/* @media screen and (max-width: 480px) {
+    .containerNosotros{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    "quienesSomos quienesSomos"
+    "imgQ imgQ"
+    "mision mision"
+    "imgM imgM"               
+    "vision vision"
+    "imgV imgV"
+    "header header" 
+    "footer footer"     
+    }
+    .imgM, .imgQ, .imgV{
+        width: 50%;
+    }
+   
+} */
