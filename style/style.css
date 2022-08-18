@@ -383,8 +383,8 @@ body{
     align-items: center;
     justify-content: space-around;  
     background-color: #ff8c00;     
-    margin: 20px 200px;
-    padding: 3rem 0;
+    margin: 10px 0;
+    padding: 2rem 0;
     
 }
 
@@ -472,22 +472,174 @@ body{
     }
     
 }
-/* @media screen and (max-width: 480px) {
-    .containerNosotros{
-    grid-template-columns: 1fr 1fr;
+
+/* PRODUCTOS */
+
+/* 769px — 1024px: Laptops pantalla pequeñas. */
+@media screen and (max-width: 1024px) {
+    .contenedorProductos{
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+        
+        "vitaminas descripcion"
+        "granos  descripcion"
+        "frutosSecos  descripcion"               
+        "frutas  descripcion"
+        "verduras  descripcion" 
+        "salsas  descripcion"
+        "header header"     
+        "footer footer"     
+        }
+} 
+/* 481px — 768px: Tablets / Ipdas */
+@media screen and (max-width: 768px) {
+    .contenedorProductos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+        "descripcion descripcion"
+        "vitaminas vitaminas"
+        "granos granos"
+        "frutosSecos frutosSecos"               
+        "frutas frutas"
+        "verduras verduras" 
+        "salsas salsas"
+        "header header"     
+        "footer footer"     
+        }
+} 
+/* 320px — 480px: Mobile */
+@media screen and (max-width: 480px) {
+    .contenedorProductos{
+    grid-template-columns: 2fr;
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: 
-    "quienesSomos quienesSomos"
-    "imgQ imgQ"
-    "mision mision"
-    "imgM imgM"               
-    "vision vision"
-    "imgV imgV"
-    "header header" 
-    "footer footer"     
+    "descripcion"
+    "vitaminas"
+    "granos"
+    "frutosSecos"               
+    "frutas"
+    "verduras" 
+    "salsas" 
+    "header"     
+    "footer"     
+    }   
+} 
+
+
+/* RECETAS */
+
+/* 769px — 1024px: Laptops pantalla pequeñas. */
+@media screen and (max-width: 1024px) {
+    .contenedorRecetas{
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        
+        "zumos          descripcion"
+        "ensaladas      canal"
+        "sopas          canal"
+        "desayunos      canal"
+        "header         header"
+        "footer         footer ";    
+        }
+} 
+/* 481px — 768px: Tablets / Ipdas */
+@media screen and (max-width: 768px) {
+    .contenedorRecetas{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "descripcion       descripcion"
+        "zumos             ensaladas"
+        "sopas             desayunos "
+        "canal             canal"
+        "header            header"
+        "footer            footer ";     
+        }
+} 
+/* 320px — 480px: Mobile */
+@media screen and (max-width: 480px) {
+    .contenedorRecetas{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    "descripcion"
+    "zumos"
+    "ensaladas"
+    "desayunos"
+    "sopas"
+    "canal"
+    "header"               
+    "footer";        
+    } 
+    iframe{
+        width: 100%;
+    }  
+} 
+/* CONTACTO*/
+
+/* 1025px — 1200px: Escritorio, pantallas grandes. */
+@media screen and (max-width: 1200px) {
+    .contenedorContacto{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr 1fr;
+        grid-template-areas: 
+        "logoContacto logoContacto logoContacto"
+        "formulario    formulario  formulario"
+        "header      header         header"
+        "footer      footer         footer";
     }
-    .imgM, .imgQ, .imgV{
-        width: 50%;
+    .formulario{
+        margin:8px 0;
+        padding: 1.5rem 0;
     }
-   
-} */
+} 
+/* 769px — 1024px: Laptops pantalla pequeñas. */
+@media screen and (max-width: 1024px) {
+    .contenedorContacto{
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 3fr 1fr 1fr;
+        grid-template-areas: 
+        "logoContacto"
+        "formulario"
+        "header"
+        "footer";
+    }
+    .formulario{
+        margin:5px 0;
+        padding: 1rem 0;
+    }
+} 
+/* 481px — 768px: Tablets / Ipdas */
+@media screen and (max-width: 768px) {
+    .contenedorContacto{
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 3fr 1fr 1fr;
+        grid-template-areas: 
+        "logoContacto"
+        "formulario"
+        "header"
+        "footer";
+    }
+    .formulario{
+        margin:5px 0;
+        padding: 1rem 0;
+} 
+/* 320px — 480px: Mobile */
+@media screen and (max-width: 480px) {
+    .contenedorContacto{
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 3fr 1fr 1fr;
+        grid-template-areas: 
+        "logoContacto"
+        "formulario"
+        "header"
+        "footer";
+    } 
+    .formulario{
+        margin:5px 0;
+        padding: 1rem 0;
+    }
+}
