@@ -101,7 +101,7 @@ body{
 
 /* ANIMACION LOGO */
 
-.logo{-webkit-animation:bounce-in-top 2s 1s;animation:bounce-in-top 2s 1s}
+.logo{-webkit-animation:bounce-in-top 2s;animation:bounce-in-top 2s}
 @-webkit-keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
  
 
@@ -119,7 +119,7 @@ body{
     color: azure;
     position: abolute;
     top: 0; right: 0; bottom: 0; left: 0;
-    margin: 1rem auto ;
+    margin: 3rem auto ;
 
     overflow: hidden;
 
@@ -161,7 +161,7 @@ color: crimson;
 }
 
 
-.slogan{-webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) 1s both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) 4.5s both}
+.slogan{-webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) 1s both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) 3s both}
  @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 
 .banner{
@@ -175,7 +175,7 @@ color: crimson;
 }
 
 /* ANIMACION BANNER */
-.banner{-webkit-animation:slide-in-bottom 2.5s cubic-bezier(.25,.46,.45,.94) 1s both;animation:slide-in-bottom 1.5s cubic-bezier(.25,.46,.45,.94) 3s both}
+.banner{-webkit-animation:slide-in-bottom 2.5s cubic-bezier(.25,.46,.45,.94) 1s both;animation:slide-in-bottom 1.5s cubic-bezier(.25,.46,.45,.94) 1s both}
  @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
 
