@@ -12,42 +12,158 @@ Medidas aprox de media queries
 1201px and more — Super pantallas, tv*/
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Fontdiner+Swanky&family=Galindo&family=Ribeye+Marrow&family=Seymour+One&family=Swanky+and+Moo+Moo&display=swap');
-/* font-family: 'Bungee Outline', cursive;
-font-family: 'Fontdiner Swanky', cursive;
-font-family: 'Galindo', cursive;
-font-family: 'Ribeye Marrow', cursive;
-font-family: 'Seymour One', sans-serif;
-font-family: 'Swanky and Moo Moo', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Indie+Flower&family=Rubik+Mono+One&family=Swanky+and+Moo+Moo&display=swap');
+/*    font-family: 'Bungee', cursive;
+
+    font-family: 'Indie Flower', cursive;
+
+    font-family: 'Rubik Mono One', sans-serif;
+
+    font-family: 'Swanky and Moo Moo', cursive; */
 /* RESET */
 *{margin: 0;padding: 0;box-sizing: border-box;}
 a{text-decoration: none; color: aliceblue;}
 body{
     background-color: #ff8c00;
+    position: relative;
 }
+
+
+
+
+
 .containerHero{
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr  1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "logo   logo   logo"
-    "banner banner banner"
     "header header header"
+    "logo   logo   logo"
+    "slogan slogan slogan"
+    "banner banner banner"
     "footer footer footer";
 }
+.header{
+    background-color: rgb(0, 0, 0);
+    grid-area: header;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+.menu{
+    list-style: none;
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+    font-family: 'Indie Flower', cursive;
+    font-weight:bold;
+    padding-block: 5px;
+    
+}
 
-.logo{
-    background-color: #ff8c00;
+.menu__item.active a, .menu__item a:hover{
+    color: darkorange;
+}
+
+/* ANIMACION MENU */
+.menu__item.active{-webkit-animation:bounce-in-fwd 3s both;animation:bounce-in-fwd 1.1s both}
+ @-webkit-keyframes bounce-in-fwd{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:scale(.7);transform:scale(.7);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:scale(.84);transform:scale(.84);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}89%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:scale(.95);transform:scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-fwd{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:scale(.7);transform:scale(.7);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:scale(.84);transform:scale(.84);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}89%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:scale(.95);transform:scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+.menu__item{-webkit-animation:bounce-in-fwd 1s both;animation:bounce-in-fwd 2s both}
+ @-webkit-keyframes bounce-in-fwd{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:scale(.7);transform:scale(.7);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:scale(.84);transform:scale(.84);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}89%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:scale(.95);transform:scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-fwd{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:scale(.7);transform:scale(.7);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:scale(.84);transform:scale(.84);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}89%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:scale(.95);transform:scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
+
+
+
+
+
+
+
+
+ .logo{
+    background-color:transparent;
     grid-area: logo;
     display: flex;
     justify-content: center;
+    margin-top: 5%;
     
 }
 .logo img{
     width: 30%;
+    
 }
+
+
+/* ANIMACION LOGO */
+
+.logo{-webkit-animation:bounce-in-top 2s 1s;animation:bounce-in-top 2s 1s}
+@-webkit-keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+ 
+
+
+.slogan{
+    grid-area: slogan;
+    background-color: #ff8c00;
+    display: flex;
+    justify-content: center;
+    width: 50%; 
+    height: 50px; 
+    line-height: 50px;
+    font-family: 'Swanky and Moo Moo', cursive;   
+    font-size:10vh;
+    color: azure;
+    position: abolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: 1rem auto ;
+
+    overflow: hidden;
+
+    
+}
+.ulSlogan{
+    list-style: none;
+    padding-left: 10px;    
+    animation: cambiarSlogan 7s infinite;
+}
+ul, p{ margin: 0px;
+margin-inline: 10px;}
+ 
+ul{
+    text-align: right;
+}
+.sano{
+color: crimson;
+}
+
+/* ANIMACION SLOGAN */
+@keyframes cambiarSlogan {
+    
+    0%{margin-top: 0;}
+    20%{margin-top: 0;}
+
+    25%{margin-top:-50px;}
+    50%{margin-top: -50px;}
+
+    55%{margin-top: -100px;}
+    80%{margin-top: -100px;}
+
+    85%{margin-top: -50px;}
+    95%{margin-top: -50px;}
+
+    100%{margin-top: -0;}
+
+
+}
+
+
+.slogan{-webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) 1s both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) 4.5s both}
+ @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
 .banner{
     background-color: #ff8c00;
     grid-area: banner;
@@ -57,30 +173,19 @@ body{
 .banner img{
     width: 90%
 }
-.header{
-    background-color: rgb(0, 0, 0);
-    grid-area: header;
-    width: auto;
-    height: auto;
-    
-}
-.menu{
-    list-style: none;
-    display: flex;
-    
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 1rem;
-    font-size: x-large;
-    font-family: 'Fontdiner Swanky', cursive;
-}
-.menu__item.active a, .menu__item a:hover{
-    color: darkorange;
-}
+
+/* ANIMACION BANNER */
+.banner{-webkit-animation:slide-in-bottom 2.5s cubic-bezier(.25,.46,.45,.94) 1s both;animation:slide-in-bottom 1.5s cubic-bezier(.25,.46,.45,.94) 3s both}
+ @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+
+
+
+
 .footer{
     width: 100%;
     height: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: darkorange;
     grid-area: footer;
     display: flex;
     justify-content: center;
@@ -91,7 +196,7 @@ body{
 }
 .footer .logo{
     width: 3rem;
-    background-color: aliceblue;
+    background-color: transparent;
 }
 
 
@@ -99,6 +204,7 @@ body{
 .containerNosotros{
     width: 100%;
     height: 100vh;
+    margin-block: 10%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -108,6 +214,7 @@ body{
     "vision       vision       imgV"
     "header       header       header"
     "footer       footer       footer";
+    
 }
 
 .quienesSomos{
@@ -120,6 +227,7 @@ body{
     gap: 2rem;
     text-align: justify;
     padding: 3rem;
+   
 }
 
 .imgQ{
