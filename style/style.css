@@ -29,40 +29,34 @@ body{
 }
 
 
+/* INDEX */
 
-
-
-.containerHero{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "logo   logo   logo"
-    "slogan slogan slogan"
-    "banner banner banner"
-    "footer footer footer";
-}
-.header{
-    /* background-color: rgb(0, 0, 0); */
-    grid-area: header;
-    /* width: auto;
-    height: auto; */
-  
+.barra{
+    padding-inline: 2rem;
     
 }
+
+/* link del logo */
+.aLogo{
+    width: 6rem;
+
+}
+
 .menu{
-    list-style: none;
+    /* list-style: none; */
+    background: transparent;
+    height: 5rem;
     display: flex;    
-    justify-content: space-around;
+    justify-content:right;
+  
     align-items: center;
     font-size: x-large;
     font-family: 'Indie Flower', cursive;
-    font-weight:bold;
-    padding-block: 5px;
+    font-weight: 900;   
     
+}
+.nav-link{
+    color: azure;
 }
 
 .menu__item.active a, .menu__item a:hover{
@@ -75,6 +69,8 @@ body{
 .menu__item{-webkit-animation:bounce-in-fwd 1s both;animation:bounce-in-fwd 2s both}
  @-webkit-keyframes bounce-in-fwd{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:scale(.7);transform:scale(.7);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:scale(.84);transform:scale(.84);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}89%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:scale(.95);transform:scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-fwd{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:scale(.7);transform:scale(.7);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:scale(.84);transform:scale(.84);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}89%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:scale(.95);transform:scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
 
+ .aLogo{-webkit-animation:bounce-in-fwd 1s both;animation:bounce-in-fwd 2s both}
+ @-webkit-keyframes bounce-in-fwd{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:scale(.7);transform:scale(.7);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:scale(.84);transform:scale(.84);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}89%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:scale(.95);transform:scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-fwd{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:scale(.7);transform:scale(.7);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:scale(.84);transform:scale(.84);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}89%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:scale(.95);transform:scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
 
 
 
@@ -83,53 +79,48 @@ body{
 
 
 
- .logo{
-    /* background-color:transparent;
-    grid-area: logo;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%; */
-    
-}
-.logo img{
-    width: 80%;
+
+ .logoHero{
+    width:80%;
+    margin-top: 150px;
     
 }
 
 
 /* ANIMACION LOGO */
 
-.logo{-webkit-animation:bounce-in-top 2s;animation:bounce-in-top 2s}
+.logoHero{-webkit-animation:bounce-in-top 2s;animation:bounce-in-top 3s}
 @-webkit-keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
  
 
 
 .slogan{
-    grid-area: slogan;
-    background-color: #ff8c00;
+       /* background-color: #ff8c00; */
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     width: 100%; 
     height: 3.1rem; 
     line-height: 3.1rem;
     font-family: 'Swanky and Moo Moo', cursive;   
-    font-size:10vh;
+    font-size:3.1rem;
     color: azure;
-    position: abolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    margin: 3rem auto ;
+    margin: 2rem auto ;
     overflow: hidden;    
 }
 .ulSlogan{
     list-style: none;
-    padding-left: 10px;    
+       
     animation: cambiarSlogan 7s infinite;
 }
-ul, p{ margin: 0px;
-margin-inline: 2%;}
+ul, p{ margin: auto;
+margin-inline: 2%;
+}
+p{
+    padding-right: 10%; 
+}
  
 ul{
-    text-align: right;
+    text-align:right;
 }
 .sano{
 color: crimson;
@@ -141,15 +132,17 @@ color: crimson;
     0%{margin-top: 0;}
     20%{margin-top: 0;}
 
-    25%{margin-top:3.1rem}
-    50%{margin-top: 3.1rem}
+   
+    25%{margin-top: -3.1rem}
+    50%{margin-top: -3.1rem}
 
-    55%{margin-top: -6.25px;}
-    80%{margin-top: -6.25px;}
+    55%{margin-top: -6.25rem;}
+    80%{margin-top: -6.25rem;}
 
-    85%{margin-top: -3.1rem}
-    95%{margin-top: -3.1rem}
-
+    85%{margin-top: -3.1rem;}
+    95%{margin-top: -3.1rem;}
+    
+   
     100%{margin-top: -0;}
 
 
@@ -160,7 +153,7 @@ color: crimson;
  @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 
 .banner{
-    background-color: #ff8c00;
+    /* background-color: transparent; */
     grid-area: banner;
     display: flex;
     justify-content: center;
@@ -174,20 +167,23 @@ color: crimson;
  @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
 
-
+/* COMENTARIOS */
+.comentarios{
+    margin: 1rem;;
+}
+.comentario{
+   padding: 5%;
+}
 
 
 .footer{
-    width: 100%;
-    height: 50px;
-    background-color: darkorange;
-    grid-area: footer;
+    height: 30vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 2rem;
     padding: 2rem 0;
-    border: 1rem solid black;
+    
 }
 .footer .logo{
     width: 3rem;
@@ -196,25 +192,31 @@ color: crimson;
 
 
 /* NOSOTROS */
+
 .containerNosotros{
-    width: 100%;
-    height: 100vh;
-    margin-block: 10%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "quienesSomos quienesSomos imgQ"
-    "imgM      mision       mision"
-    "vision       vision       imgV"
-    "header       header       header"
-    "footer       footer       footer";
+    margin-top: 50px;
+    padding: 20px;
+    
+
+    font-family: 'Indie Flower', cursive;
+
+    
     
 }
+.containerNosotros h2{
+    
+    font-family: 'Rubik Mono One', sans-serif;
+}
+.containerNosotros div{
+    margin-block: 20px;
+}
+
+.containerNosotros{-webkit-animation:bounce-in-top 2s;animation:bounce-in-top 3s}
+@-webkit-keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
 
 .quienesSomos{
-    grid-area:quienesSomos;
-    background-color: #ff8c00;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,55 +226,20 @@ color: crimson;
     padding: 3rem;
     
    
-}
-.quienesSomos:hover h2{
+} 
+ .quienesSomos:hover h2{
 
-    transform: scale(3) ;
+    transform: scale(2) ;
     transition: all 1.5s;
     color: azure;
 }
-.imgQ{
-    grid-area: imgQ;
-    background-color: #ff8c00;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 1s;
-}
-.imgQ img{
-    width: 100%;
-    border-radius: 50px;
-    padding: 1rem;
-    
-    
-}
-.imgQ:hover {
-    
-    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
-}
 
-.imgM{
-    grid-area: imgM;
-    background-color: #ff8c00;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 1s;
-}
-    
-.imgM img{
-    width: 100%;
-    border-radius: 50px;
-    padding: 1rem;
-}
-.imgM:hover {
-    
-    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
-}
+
+
+
+
    
 .mision{
-    grid-area:mision;
-    background-color: #ff8c00;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -284,14 +251,12 @@ color: crimson;
 }
 .mision:hover h2{
 
-    transform: scale(3) ;
+    transform: scale(2) ;
     transition: all 1.5s;
     color: azure;
 }
 
 .vision{
-    grid-area: vision;
-    background-color: #ff8c00;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -299,247 +264,39 @@ color: crimson;
     gap: 2rem;
     text-align: justify;
     padding: 3rem;
-    transition: all 1s;
 }
 .vision:hover h2{
 
-    transform: scale(3) ;
+    transform: scale(2) ;
     transition: all 1.5s;
     color: azure;
-}
-.imgV{
-    grid-area: imgV;
-    background-color: #ff8c00;
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    transition: all 1s;
-}
-
-.imgV img{
-    width: 100%;
-    border-radius: 50px;
-    padding: 1rem;    
-}
-.imgV:hover {
-    
-    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
-}
-.header{
-    grid-area:header ;
-}
-.footer{
-    grid-area: footer;
 }
 
 
 
 /* PRODUCTOS */
-
-.contenedorProductos{
-    width: 100%;
-    height: 100vh;
-    background-color: #ff8c00;
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: 3fr 3fr 3fr 1fr 1fr;
-    grid-template-areas: 
-    "vitaminas   granos descripcion"
-    "frutosSecos frutas descripcion"
-    "verduras  salsas      descripcion"
-    "header      header         header"
-    "footer      footer         footer";
-}
-
-.descripcion{
-    grid-area:descripcion ;
-    background-image: url(../imagenes/imagenes/hand-meray.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: aliceblue;
-
-}
-.vitaminas{
-    grid-area:vitaminas;    
-    background-image: url(../imagenes/imagenes/vitaminas.jpg);    
-}
-.granos{
-    grid-area:granos;    
-    background-image: url(../imagenes/imagenes/granos.jpg);
-}
-.frutosSecos{
-    grid-area:frutosSecos;    
-    background-image: url(../imagenes/imagenes/frutossecos.jpg);
-}
-.frutas{
-    grid-area:frutas;
-    background-image: url(../imagenes/imagenes/frutas.jpg);  
-}
-.verduras{
-    grid-area:verduras;
-    background-image: url(../imagenes/imagenes/verduras.jpg);
-}
-.salsas{
-    grid-area:salsas;
-    background-image: url(../imagenes/imagenes/salsas.jpg);
-}
-
-.header{
-    grid-area: header;
-}
-.footer{
-    grid-area: footer;
-}
-
-.cards{
-   display: flex;
-   justify-content:center;
-   align-items: center;   
-   margin: 1rem;
-   border-radius: 10px;
-   background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.descripcion{
-    display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
-   padding: 1rem;
-   margin: 1rem;
-   border-radius: 10px;
-   background-color: rgba(0, 0, 0, 0.507);
-}
-
-.contenedorProductos h2,h3{
-    font-size: xx-large;
-    text-align: center;
-    font-weight: 1000;
-    color: #070707;
-    font-family: 'Ribeye Marrow', cursive;
-    
-
-
-    
-}
-.contenedorProductos p{
-    font-size: large;
-    color: black;
-    font-family: 'Swanky and Moo Moo', cursive;
-    margin-bottom: 10px;
+.carrousel{width: auto;
 }
 
 
 /* RECETAS */
-.contenedorRecetas{
-    width: 100%;
-    height: 100vh;
-    background-color: #ff8c00;
-    display: grid;
-    grid-template-columns: repeat(3, 2fr) ;
-    grid-template-rows: 3fr 3fr 3fr 3fr 1fr 1fr;
-    grid-template-areas: 
-    "descripcion zumos  ensaladas"
-    "descripcion zumos ensaladas"
-    "canal sopas desayunos"
-    "canal sopas desayunos"
-    "header      header         header"
-    "footer      footer         footer";
-}
-
-.recetas{
-    background-image: url(../imagenes/imagenes/granola.jpg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.zumos{
-    grid-area:zumos;    
-    background-image: url(../imagenes/imagenes/batidoEspinaca.jpg);    
-}
-.ensaladas{
-    grid-area:ensaladas;    
-    background-image: url(../imagenes/imagenes/frutasycereal.jpg);
-}
-.sopas{
-    grid-area:sopas;    
-    background-image: url(../imagenes/imagenes/cremadezanahoria.jpg);
-}
-.desayunos{
-    grid-area:desayunos;
-    background-image: url(../imagenes/imagenes/champiñonRelleno.jpg);  
-}
 .canal{
-    grid-area:canal;
-}
-
-
-.header{
-    grid-area: header;
-}
-.footer{
-    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 
 /* CONTACTO */
-.contenedorContacto{
-    width: 100%;
-    height: 100vh;
-    background-color: #ff8c00;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr 1fr;
-    grid-template-areas: 
-    "logoContacto logoContacto logoContacto"
-    "formulario    formulario  formulario"
-    "header      header         header"
-    "footer      footer         footer";
-
+.contacto{
+   
     
+    margin:0 10%;
 }
-.logoContacto{
-    grid-area: logoContacto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.logoContacto img{
-    width: 200px;
-}
-.formulario{
-    
-    grid-area: formulario;
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
-    justify-content: space-around;  
-    background-color: #ff8c00;     
-    margin: 10px 0;
-    padding: 2rem 0;
-    
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    width: 70%;
-    padding: 2rem;
-    background-color: rgb(55, 129, 129);
-    border-radius: 50px;  
-    
-}
-.botonFormulario{
-    width: 5rem;
-    margin-inline: auto;
-    
-}
+.contacto button{
+    margin-top: 25px;
+}  
 
 
 

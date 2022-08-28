@@ -5,55 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imagenes/logos/favico.ico" type="image/x-icon">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./style/estilos.css">
     <title>Almonat</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./style/style.css" />
 </head>
 <body>
+  <!-- contenedor del index -->
+  <main class="container-fluid">
+    <!-- fila de la navbar -->
+    <nav class="row barra navbar justify-content-beetwen
+     navbar-expand-md navbar-dark bg-dark fixed-top header">
+      <a class="aLogo navbar-brand col-2" href="index.html">
+        <img
+          src="./imagenes/logos/almonat.png"
+          alt=""
+          class="mw-100"
+        />
+      </a>
 
-    <main class="container-fluid">
-        <!-- fila de la navbar -->
-        <nav class="row navbar justify-content-beetwen
-         navbar-expand-md navbar-dark bg-dark fixed-top header">
-          <a class="navbar-brand col-2" href="index.html">
-            <img
-              src="./imagenes/logos/almonat.png"
-              alt=""
-              class="mw-100"
-            />
-          </a>
-  
-          <button
-            class="navbar-toggler-icon navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          ></button>
-  
-          <div class="col-6 collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav justify-content-end menu">
-              <li class="nav-item menu__item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item menu__item">
-                <a class="nav-link" href="./productos.html">Productos</a>
-              </li>
-              <li class="nav-item menu__item">
-                <a class="nav-link" href="./recetas.html">Recetas</a>
-              </li>
-              <li class="nav-item menu__item">
-                <a class="nav-link" href="./contacto.html">Contactos</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <button
+        class="navbar-toggler-icon navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      ></button>
+
+      <div class="menu col-6 collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav justify-content-end menu">
+          <li class="nav-item menu__item">
+            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item menu__item">
+            <a class="nav-link" href="./productos.html">Productos</a>
+          </li>
+          <li class="nav-item menu__item active">
+            <a class="nav-link" href="./recetas.html">Recetas</a>
+          </li>
+          <li class="nav-item menu__item">
+            <a class="nav-link" href="./contacto.html">Contactos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
         <!-- fila carrousel-->
         <div class="row carrousel">
@@ -68,8 +68,8 @@
                       
                     </div>
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./imagenes/imagenes/champiñonRelleno.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-item active">                        
+                        <img src="./imagenes/imagenes/batidobabano.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                           <h5>First slide label</h5>
                           <p>Some representative placeholder content for the first slide.</p>
@@ -90,7 +90,7 @@
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="./imagenes/imagenes/batidobabano.jpg" class="d-block w-100" alt="...">
+                        <img src="./imagenes/imagenes/champiñonRelleno.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                           <h5>Third slide label</h5>
                           <p>Some representative placeholder content for the third slide.</p>
@@ -120,7 +120,7 @@
                 <h3>Batidos</h3>
             </div>
         </div>
-        <div class="row d-flex align-items-center justify-content-center ">
+        <div class="row d-flex align-items-center justify-content-around ">
             <div class="col-12  col-md-4 col-lg-4 ">
                         
 
@@ -261,11 +261,11 @@
 
             </div>                    
         </div>
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-auto">
+        <div class="canal row">
+            <div class="col-12">
                 <h3>Siguenos en YouTube para mas Recetas Deliciosas</h3>
             </div>
-            <div class="col-8">
+            <div class="col-12">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/_SpIHhePKWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
