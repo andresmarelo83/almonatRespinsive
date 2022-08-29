@@ -175,6 +175,7 @@ color: crimson;
    padding: 5%;
    background-color: azure;
    border: 5px solid darkorange;
+   border-radius: 20px;
 }
 .comentario h3{
     font-size: medium;
