@@ -173,6 +173,22 @@ color: crimson;
 }
 .comentario{
    padding: 5%;
+   background-color: azure;
+   border: 5px solid darkorange;
+}
+.comentario h3{
+    font-size: medium;
+    font-family: 'Bungee', cursive;
+
+    font-family: 'Indie Flower', cursive;
+
+    /* font-family: 'Rubik Mono One', sans-serif; */
+
+   
+}
+.comentario p{
+    font-size: medium;
+    font-family: 'Swanky and Moo Moo', cursive;
 }
 
 
@@ -275,9 +291,12 @@ color: crimson;
 
 
 /* PRODUCTOS */
-.carrousel{width: auto;
+.carrousel{
+    width: auto;
+    margin-top: 100px;
+    
 }
-
+  
 
 /* RECETAS */
 .canal{
