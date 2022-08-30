@@ -287,12 +287,10 @@ margin-inline: 2%;
 
 
 /* PRODUCTOS */
-
-.carrousel{
-   
-   
-}
-
+  
+  .carousel-inner img {
+    height: 600px;
+  }
 .textCarrousel{
     background-color: rgba(0, 0, 0, 0.5);
     color: #ff8c00;
