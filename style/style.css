@@ -153,20 +153,11 @@ margin-inline: 2%;
 }
 
 /* FOOTER */
-.footer{
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem 0;
-    text-align: center;
-    
-}
-.footer .logo{
+
+ /* .logo{
     width: 3rem;
     background-color: transparent;
-}
+}  */
 
 
 
@@ -300,13 +291,6 @@ margin-inline: 2%;
    margin:1rem;
 }
   
-
-
-
-
-
-
-
 
 
 
