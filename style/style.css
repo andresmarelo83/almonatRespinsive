@@ -37,17 +37,13 @@ body{
 .aLogo{width: 6rem;}
 
 .menu{
-    background: transparent;
-    height: 5rem;
-    display: flex;    
-    justify-content:right;  
-    align-items: center;
     font-size: x-large;
     font-family: 'Indie Flower', cursive;
     font-weight: 900;     
 }
 
-.nav-link{color: azure;}
+
+.nav-link{color: rgb(0, 0, 0);}
 
 .menu__item.active a, .menu__item a:hover{color: darkorange;}
 
@@ -63,7 +59,7 @@ body{
 
  .logoHero{
     width:80%;
-    margin-top: 150px;    
+       
 }
 
 
@@ -199,8 +195,6 @@ margin-inline: 2%;
 /* NOSOTROS */
 
 .containerNosotros{
-    margin-top: 50px;
-    padding: 20px; 
     font-family: 'Indie Flower', cursive;  
 }
 
@@ -295,8 +289,8 @@ margin-inline: 2%;
 /* PRODUCTOS */
 
 .carrousel{
-    width: auto;
-    margin-top: 100px;
+   
+   
 }
 
 .textCarrousel{
