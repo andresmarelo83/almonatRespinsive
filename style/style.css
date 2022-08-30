@@ -133,7 +133,7 @@ margin-inline: 2%;
 
 
 /* COMENTARIOS */
-.comentarios{margin: 1rem;}
+.comentarios{margin-top: 2rem;}
 
 .comentario{
    padding: 5%;
@@ -218,7 +218,7 @@ margin-inline: 2%;
 } 
 
 .quienesSomos:hover h2{
-    transform: scale(2) ;
+    transform: scale(1.2) ;
     transition: all 1.5s;
     color: azure;
 }
@@ -236,7 +236,7 @@ margin-inline: 2%;
 }
 
 .mision:hover h2{
-    transform: scale(2) ;
+    transform: scale(1.5) ;
     transition: all 1.5s;
     color: azure;
 }
@@ -252,7 +252,7 @@ margin-inline: 2%;
 }
 
 .vision:hover h2{
-    transform: scale(2) ;
+    transform: scale(1.5) ;
     transition: all 1.5s;
     color: azure;
 }
@@ -327,13 +327,8 @@ margin-inline: 2%;
 
 /* RECETAS */
 .canal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    margin: 2rem;
 }
-
-
 
 
 
