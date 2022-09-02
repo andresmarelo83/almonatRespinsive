@@ -52,6 +52,9 @@
             .menu__item a:hover{
                 color: $primaryColor;
             }
+            .menu__item.active a{
+                color: $primaryColor;
+            }
             
             .nav-link{
                 color:$linksColor;

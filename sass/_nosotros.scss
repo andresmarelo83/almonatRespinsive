@@ -1,0 +1,83 @@
+.containerNosotros{
+
+    font-family: $fontitle;
+    -webkit-animation:bounce-in-top 2s;animation:bounce-in-top 3s}
+    @-webkit-keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}
+    
+
+}
+
+.quienesSomos{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: justify;
+    padding: 3rem;   
+
+    .quienesSomos:hover h2{
+        transform: scale(1.2) ;
+        transition: all 1.5s;
+        color:$secondaryColor;
+    }
+
+    
+    h2{
+        font-family: $fontitle;
+    }
+    p{
+        font-family: $fontSlogan;
+    }
+
+    
+} 
+
+.mision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: justify;
+    padding: 3rem;
+
+    .mision:hover h2{
+        transform: scale(1.5) ;
+        transition: all 1.5s;
+        color: azure;
+    }
+    
+    h2{
+        font-family: $fontitle;
+    }
+    p{
+        font-family: $fontSlogan;
+    }
+    
+}
+
+.vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: justify;
+    padding: 3rem;
+
+    .vision:hover h2{
+        transform: scale(1.5) ;
+        transition: all 1.5s;
+        color: azure;
+    }
+
+    h2{
+        font-family: $fontitle;
+    }
+    p{
+        font-family: $fontSlogan;
+    }
+
+    
+}
