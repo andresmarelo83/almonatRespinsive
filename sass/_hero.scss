@@ -1,0 +1,58 @@
+
+.logoHero{
+    width:80%;
+    -webkit-animation:bounce-in-top 2s;animation:bounce-in-top 3s}
+    @-webkit-keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out} 
+}
+
+.slogan{
+    display: flex;
+    justify-content:center;
+    width: 100%; 
+    height: 3.1rem; 
+    line-height: 3.1rem;
+    font-family: $fontSlogan;
+    font-size:3.1rem;
+    color: $secondaryColor;
+    margin: 2rem auto ;
+    overflow: hidden;
+    -webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) 1s both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) 3s both}
+     @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}
+    }   
+        .ulSlogan{
+         text-align:right;
+         list-style: none;       
+         animation: cambiarSlogan 7s infinite;
+        }
+        @keyframes cambiarSlogan {
+     
+         0%{margin-top: 0;}
+         20%{margin-top: 0;}
+        
+         25%{margin-top: -3.1rem}
+         50%{margin-top: -3.1rem}
+     
+         55%{margin-top: -6.25rem;}
+         80%{margin-top: -6.25rem;}
+     
+         85%{margin-top: -3.1rem;}
+         95%{margin-top: -3.1rem;}    
+        
+         100%{margin-top: -0;}
+        }
+        .sano{
+            padding-right: 10%;
+            color: $colorSlogan;
+        }
+    
+.banner{
+
+    img{
+        width: 90%;
+        }
+       
+    -webkit-animation:slide-in-bottom 2.5s cubic-bezier(.25,.46,.45,.94) 1s both;animation:slide-in-bottom 1.5s cubic-bezier(.25,.46,.45,.94) 1s both}
+    @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}
+
+    
+}

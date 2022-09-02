@@ -1,0 +1,17 @@
+.comentarios{
+    margin-top: 2rem;
+}
+.comentario{
+    padding: 5%;
+    background-color:$secondaryColor;
+    border: 5px solid $primaryColor;
+    border-radius: 20px;
+
+    h3{
+        font-size: medium;
+        font-family: $fontMenu;
+    }
+    p{
+        font-family: $fontSlogan
+    }
+} 

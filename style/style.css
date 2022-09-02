@@ -24,7 +24,7 @@ Medidas aprox de media queries
 *{margin: 0;padding: 0;box-sizing: border-box;}
 a{text-decoration: none; color: aliceblue;}
 body{
-    background-color: #ff8c00;
+    background-color: hsl(33, 100%, 50%);
     position: relative;
 }
 
