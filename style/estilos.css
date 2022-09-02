@@ -318,6 +318,11 @@ body {
   color: #ff8c00;
   font-weight: 900;
 }
+.carousel-item p {
+  background-color: #000;
+  color: #ff8c00;
+  font-weight: 900;
+}
 
 .card {
   margin: 1rem;
@@ -672,7 +677,7 @@ body {
   text-align: justify;
   padding: 3rem;
 }
-.quienesSomos .quienesSomos:hover h2 {
+.quienesSomos h2:hover {
   transform: scale(1.2);
   transition: all 1.5s;
   color: #f0ffff;
@@ -693,10 +698,10 @@ body {
   text-align: justify;
   padding: 3rem;
 }
-.mision .mision:hover h2 {
-  transform: scale(1.5);
+.mision h2:hover {
+  transform: scale(1.2);
   transition: all 1.5s;
-  color: azure;
+  color: #f0ffff;
 }
 .mision h2 {
   font-family: "Rubik Mono One", sans-serif;
@@ -714,10 +719,10 @@ body {
   text-align: justify;
   padding: 3rem;
 }
-.vision .vision:hover h2 {
-  transform: scale(1.5);
+.vision h2:hover {
+  transform: scale(1.2);
   transition: all 1.5s;
-  color: azure;
+  color: #f0ffff;
 }
 .vision h2 {
   font-family: "Rubik Mono One", sans-serif;
