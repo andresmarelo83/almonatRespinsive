@@ -776,6 +776,11 @@ footer .text-center {
   margin: 2rem;
 }
 
+.cards img {
+  width: 200px;
+  height: 200px;
+}
+
 .contacto {
   margin: 0 10%;
 }
